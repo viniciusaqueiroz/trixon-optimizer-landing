@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05070b;
+  --foreground: #eef4ff;
+  --muted: #9aa8bc;
+  --line: rgba(148, 163, 184, 0.18);
+  --panel: rgba(13, 18, 30, 0.78);
+  --accent: #38bdf8;
+  --success: #34d399;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #020813;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  content: "";
+  background: #020813;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.32);
+  color: #ffffff;
+}
+
+.section-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.grid-mask {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.site-depth {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.depth-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg,
+      /* Variação 02 — Topo menos vibrante, mais premium */
+      /* Variação 04 — Mais escuro e cinematográfico */
+      #114e6a 0%,
+      #0e425b 14%,
+      #0b364c 30%,
+      #082a3d 48%,
+      #051f2f 66%,
+      #03131f 84%,
+      #00070d 100%);
+}
+
+.depth-background::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(224, 247, 255, 0.32), transparent 34rem),
+    radial-gradient(ellipse at 20% 18%, rgba(125, 211, 252, 0.16), transparent 26rem),
+    radial-gradient(ellipse at 82% 42%, rgba(52, 211, 153, 0.09), transparent 30rem),
+    linear-gradient(90deg, rgba(1, 6, 17, 0.4), transparent 22%, transparent 78%, rgba(1, 6, 17, 0.45));
+}
+
+.depth-background::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 18%),
+    linear-gradient(180deg, transparent 56%, rgba(0, 2, 9, 0.4) 100%);
+}
+
+.depth-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(52px);
+}
+
+.depth-glow-top {
+  top: -10rem;
+  left: 50%;
+  width: 42rem;
+  height: 22rem;
+  opacity: 0.36;
+  transform: translateX(-50%);
+  background: rgba(186, 230, 253, 0.7);
+}
+
+.depth-glow-mid {
+  top: 34%;
+  right: -12rem;
+  width: 34rem;
+  height: 34rem;
+  opacity: 0.18;
+  background: rgba(56, 189, 248, 0.55);
+}
+
+.depth-glow-bottom {
+  left: -10rem;
+  bottom: 10%;
+  width: 32rem;
+  height: 32rem;
+  opacity: 0.1;
+  background: rgba(52, 211, 153, 0.55);
+}
+
+.depth-plane {
+  position: absolute;
+  width: min(980px, 90vw);
+  height: 30rem;
+  opacity: 0.12;
+  border: 1px solid rgba(186, 230, 253, 0.14);
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.13), rgba(8, 47, 73, 0.04));
+  filter: blur(0.2px);
+}
+
+.depth-plane-a {
+  top: 16%;
+  left: -16rem;
+  clip-path: polygon(0 18%, 42% 0, 100% 32%, 84% 100%, 20% 78%);
+}
+
+.depth-plane-b {
+  right: -18rem;
+  bottom: 16%;
+  clip-path: polygon(12% 0, 100% 18%, 84% 82%, 24% 100%, 0 44%);
+}
