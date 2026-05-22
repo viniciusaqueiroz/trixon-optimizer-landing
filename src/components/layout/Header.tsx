@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { assetPath } from "@/lib/assets";
 
 const navItems = [
   { label: "Recursos", href: "#recursos" },
@@ -13,7 +14,7 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/8 bg-slate-950/72 backdrop-blur-xl">
       <div className="section-shell flex h-16 items-center justify-between gap-4">
         <a className="flex items-center gap-3" href="#inicio" aria-label="Trixon Optimizer">
-          <Image src="/logo.svg" alt="" width={32} height={32} priority />
+          <Image src={assetPath("/logo.svg")} alt="" width={32} height={32} priority />
           <span className="text-sm font-semibold tracking-wide text-white">
             Trixon Optimizer
           </span>

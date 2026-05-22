@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const basePath = process.env.GITHUB_PAGES === "true" ? "/trixon-optimizer-landing" : "";
+
 export const metadata: Metadata = {
   title: "Trixon Optimizer 0.3.4 | Diagnostico, limpeza e administracao Windows",
   description:
     "Landing page do Trixon Optimizer, aplicativo desktop para Windows com dashboard, limpeza segura, rede, DNS, backups, logs e diagnostico exportavel.",
   icons: {
-    icon: "/favicon.ico",
+    icon: `${basePath}/favicon.ico`,
   },
 };
 

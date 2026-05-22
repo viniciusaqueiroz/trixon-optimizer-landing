@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/Badge";
+import { assetPath } from "@/lib/assets";
 
 export function ProductPreview() {
   return (
@@ -38,7 +39,7 @@ export function ProductPreview() {
               fill
               priority
               sizes="(min-width: 1120px) 1120px, calc(100vw - 32px)"
-              src="/app-preview.png"
+              src={assetPath("/app-preview.png")}
             />
           </div>
         </motion.div>
