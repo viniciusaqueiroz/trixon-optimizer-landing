@@ -4,12 +4,19 @@ import { motion } from "framer-motion";
 import { faqs } from "@/data/faq";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
+import { revealSoft, revealTransition, revealUp, revealViewport } from "@/lib/motion";
 
 export function FAQ() {
   return (
     <section id="faq" className="py-20">
       <div className="section-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
+        <motion.div
+          initial="hidden"
+          transition={revealTransition}
+          variants={revealSoft}
+          viewport={revealViewport}
+          whileInView="visible"
+        >
           <Badge>FAQ</Badge>
           <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
             Perguntas importantes antes de confiar em uma ferramenta de sistema.
@@ -18,16 +25,17 @@ export function FAQ() {
             Transparencia tambem aparece nas respostas. O produto deve deixar
             claro o que faz, o que nao faz e quando precisa de permissao elevada.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid gap-4">
           {faqs.map((faq, index) => (
             <motion.div
-              initial={{ opacity: 0, y: 14 }}
+              initial="hidden"
               key={faq.question}
-              transition={{ duration: 0.4, delay: index * 0.04 }}
-              viewport={{ once: true }}
-              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ ...revealTransition, delay: index * 0.045 }}
+              variants={revealUp}
+              viewport={revealViewport}
+              whileInView="visible"
             >
               <Card className="p-5">
                 <h3 className="text-base font-semibold text-white">{faq.question}</h3>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
+import { revealTransition, revealUp, revealViewport } from "@/lib/motion";
 
 export function CTA() {
   return (
@@ -9,10 +10,11 @@ export function CTA() {
       <div className="section-shell">
         <motion.div
           className="overflow-hidden rounded-lg border border-sky-300/18 bg-[linear-gradient(135deg,rgba(14,165,233,0.16),rgba(15,23,42,0.86)_45%,rgba(52,211,153,0.13))] p-8 shadow-[0_30px_120px_rgba(2,6,23,0.65)] md:p-12"
-          initial={{ opacity: 0, y: 18 }}
-          transition={{ duration: 0.55 }}
-          viewport={{ once: true }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial="hidden"
+          transition={revealTransition}
+          variants={revealUp}
+          viewport={revealViewport}
+          whileInView="visible"
         >
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-200">

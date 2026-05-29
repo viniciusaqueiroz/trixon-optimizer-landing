@@ -3,12 +3,20 @@
 import { motion } from "framer-motion";
 import { roadmap } from "@/data/roadmap";
 import { Badge } from "@/components/ui/Badge";
+import { revealSoft, revealTransition, revealUp, revealViewport } from "@/lib/motion";
 
 export function Roadmap() {
   return (
     <section id="roadmap" className="py-20">
       <div className="section-shell">
-        <div className="max-w-2xl">
+        <motion.div
+          className="max-w-2xl"
+          initial="hidden"
+          transition={revealTransition}
+          variants={revealSoft}
+          viewport={revealViewport}
+          whileInView="visible"
+        >
           <Badge>Roadmap</Badge>
           <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
             Evolucao planejada sem perder a base de confianca.
@@ -17,17 +25,18 @@ export function Roadmap() {
             O produto avanca em ciclos: primeiro seguranca e estabilidade, depois
             automacoes, perfis e recursos para ambientes mais exigentes.
           </p>
-        </div>
+        </motion.div>
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {roadmap.map((item, index) => (
             <motion.article
               className="relative overflow-hidden rounded-lg border border-white/10 bg-slate-900/42 p-6"
-              initial={{ opacity: 0, y: 18 }}
+              initial="hidden"
               key={item.title}
-              transition={{ duration: 0.45, delay: index * 0.04 }}
-              viewport={{ once: true, margin: "-80px" }}
-              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ ...revealTransition, delay: index * 0.045 }}
+              variants={revealUp}
+              viewport={revealViewport}
+              whileInView="visible"
             >
               <div className="flex items-center justify-between gap-4">
                 <span className="text-sm font-semibold text-sky-200">

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { revealTransition, revealUp, revealViewport } from "@/lib/motion";
 
 export function Hero() {
   return (
@@ -10,10 +11,12 @@ export function Hero() {
       <div className="grid-mask pointer-events-none absolute inset-x-0 top-0 h-[520px]" />
       <div className="section-shell relative grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
         <motion.div
-          animate={{ opacity: 1, y: 0 }}
           className="max-w-3xl"
-          initial={{ opacity: 0, y: 18 }}
-          transition={{ duration: 0.65, ease: "easeOut" }}
+          initial="hidden"
+          transition={revealTransition}
+          variants={revealUp}
+          viewport={{ ...revealViewport, amount: 0.42 }}
+          whileInView="visible"
         >
           <Badge>Versao atual 0.3.4 | Electron + React + PowerShell</Badge>
           <h1 className="mt-6 text-4xl font-semibold leading-tight text-white md:text-6xl">
@@ -35,10 +38,12 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          animate={{ opacity: 1, scale: 1 }}
           className="relative hidden lg:block"
-          initial={{ opacity: 0, scale: 0.96 }}
-          transition={{ duration: 0.75, delay: 0.12, ease: "easeOut" }}
+          initial="hidden"
+          transition={{ ...revealTransition, delay: 0.12 }}
+          variants={revealUp}
+          viewport={{ ...revealViewport, amount: 0.42 }}
+          whileInView="visible"
         >
           <div className="rounded-lg border border-white/10 bg-slate-900/60 p-5 shadow-2xl">
             <div className="mb-5 flex items-center justify-between gap-4">

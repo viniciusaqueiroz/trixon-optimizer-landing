@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2, LockKeyhole, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
+import { revealLeft, revealSoft, revealTransition, revealViewport } from "@/lib/motion";
 
 const points = [
   "Confirmacoes antes de acoes que alteram Windows, caches, inicializacao ou energia",
@@ -17,7 +18,13 @@ export function Security() {
   return (
     <section id="seguranca" className="py-20">
       <div className="section-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
-        <div>
+        <motion.div
+          initial="hidden"
+          transition={revealTransition}
+          variants={revealSoft}
+          viewport={revealViewport}
+          whileInView="visible"
+        >
           <Badge>Seguranca e transparencia</Badge>
           <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
             Otimizacao responsavel com contexto antes da acao.
@@ -27,9 +34,16 @@ export function Security() {
             e scripts PowerShell permitidos por lista. Acoes administrativas sao
             sinalizadas ou bloqueadas quando o app nao esta elevado.
           </p>
-        </div>
+        </motion.div>
 
-        <Card className="p-6 md:p-8">
+        <motion.div
+          initial="hidden"
+          transition={{ ...revealTransition, delay: 0.08 }}
+          variants={revealLeft}
+          viewport={revealViewport}
+          whileInView="visible"
+        >
+          <Card className="p-6 md:p-8">
           <div className="flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-md bg-emerald-300/12 text-emerald-200">
               <Shield aria-hidden="true" className="h-6 w-6" />
@@ -46,11 +60,12 @@ export function Security() {
             {points.map((point, index) => (
               <motion.div
                 className="flex items-center gap-3 rounded-md border border-white/8 bg-white/[0.03] p-3 text-sm text-slate-200"
-                initial={{ opacity: 0, x: 12 }}
+                initial="hidden"
                 key={point}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ ...revealTransition, duration: 0.52, delay: index * 0.055 }}
+                variants={revealLeft}
+                viewport={revealViewport}
+                whileInView="visible"
               >
                 <CheckCircle2 aria-hidden="true" className="h-4 w-4 shrink-0 text-emerald-300" />
                 {point}
@@ -66,7 +81,8 @@ export function Security() {
               checksum, notas de versao e checklist em maquina limpa.
             </p>
           </div>
-        </Card>
+          </Card>
+        </motion.div>
       </div>
     </section>
   );
