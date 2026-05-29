@@ -3,42 +3,42 @@ export const roadmap = [
     phase: "01",
     title: "MVP seguro 0.3.4",
     description:
-      "Dashboard, limpeza, inicializacao, otimizacoes, rede, restauracao, logs, backups, changelog e diagnostico exportavel.",
-    status: "Concluido",
+      "Dashboard, limpeza, inicialização, otimizações, rede, restauração, logs, backups, changelog e diagnóstico exportável.",
+    status: "Concluído",
   },
   {
     phase: "02",
-    title: "QA em maquina limpa",
+    title: "QA em máquina limpa",
     description:
-      "Validacao em Windows 10 e Windows 11, com usuario padrao e sessao administrativa antes de release publica.",
-    status: "Proximo",
+      "Validação em Windows 10 e Windows 11, com usuário padrão e sessão administrativa antes de release pública.",
+    status: "Próximo",
   },
   {
     phase: "03",
     title: "Release assinada",
     description:
-      "Distribuicao publica somente com instalador assinado, checksum, notas de versao, smoke test e plano de rollback.",
+      "Distribuição pública somente com instalador assinado, checksum, notas de versão, smoke test e plano de rollback.",
     status: "Planejado",
   },
   {
     phase: "04",
     title: "Canais beta e stable",
     description:
-      "Preparacao de atualizacoes futuras com canais separados e feed seguro apos estabilizar assinatura e releases.",
+      "Preparação de atualizações futuras com canais separados e feed seguro após estabilizar assinatura e releases.",
     status: "Futuro",
   },
   {
     phase: "05",
-    title: "Aprimorar distribuicao",
+    title: "Aprimorar distribuição",
     description:
-      "Publicar instalador em canais oficiais com documentacao, hash SHA256, changelog e limitacoes conhecidas.",
+      "Publicar instalador em canais oficiais com documentação, hash SHA256, changelog e limitações conhecidas.",
     status: "Futuro",
   },
   {
     phase: "06",
-    title: "Evolucao de perfis",
+    title: "Evolução de perfis",
     description:
-      "Expandir automacoes e presets mantendo confirmacoes, backups e restauracao como padrao do produto.",
+      "Expandir automações e presets mantendo confirmações, backups e restauração como padrão do produto.",
     status: "Futuro",
   },
 ];

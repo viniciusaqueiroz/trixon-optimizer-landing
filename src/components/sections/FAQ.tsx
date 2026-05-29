@@ -22,8 +22,8 @@ export function FAQ() {
             Perguntas importantes antes de confiar em uma ferramenta de sistema.
           </h2>
           <p className="mt-4 leading-7 text-slate-300">
-            Transparencia tambem aparece nas respostas. O produto deve deixar
-            claro o que faz, o que nao faz e quando precisa de permissao elevada.
+            Transparência também aparece nas respostas. O produto deve deixar
+            claro o que faz, o que não faz e quando precisa de permissão elevada.
           </p>
         </motion.div>
 

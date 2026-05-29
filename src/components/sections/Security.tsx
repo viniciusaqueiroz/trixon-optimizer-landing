@@ -7,11 +7,11 @@ import { Card } from "@/components/ui/Card";
 import { revealLeft, revealSoft, revealTransition, revealViewport } from "@/lib/motion";
 
 const points = [
-  "Confirmacoes antes de acoes que alteram Windows, caches, inicializacao ou energia",
-  "Backups para inicializacao, DNS, otimizacoes e planos de energia",
-  "Renderer React sem execucao direta de PowerShell",
+  "Confirmações antes de ações que alteram Windows, caches, inicialização ou energia",
+  "Backups para inicialização, DNS, otimizações e planos de energia",
+  "Renderer React sem execução direta de PowerShell",
   "Electron main process chamando apenas scripts allowlisted",
-  "Limpezas sensiveis como opt-in, desmarcadas por padrao",
+  "Limpezas sensíveis como opt-in, desmarcadas por padrão",
 ];
 
 export function Security() {
@@ -25,14 +25,14 @@ export function Security() {
           viewport={revealViewport}
           whileInView="visible"
         >
-          <Badge>Seguranca e transparencia</Badge>
+          <Badge>Segurança e transparência</Badge>
           <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
-            Otimizacao responsavel com contexto antes da acao.
+            Otimização responsável com contexto antes da ação.
           </h2>
           <p className="mt-4 leading-7 text-slate-300">
             A arquitetura documentada usa Electron, preload seguro, IPC controlado
-            e scripts PowerShell permitidos por lista. Acoes administrativas sao
-            sinalizadas ou bloqueadas quando o app nao esta elevado.
+            e scripts PowerShell permitidos por lista. Ações administrativas são
+            sinalizadas ou bloqueadas quando o app não está elevado.
           </p>
         </motion.div>
 
@@ -51,7 +51,7 @@ export function Security() {
             <div>
               <p className="text-sm text-slate-400">Modelo operacional</p>
               <h3 className="text-lg font-semibold text-white">
-                Controle explicito para operacoes sensiveis
+                Controle explícito para operações sensíveis
               </h3>
             </div>
           </div>
@@ -76,9 +76,9 @@ export function Security() {
           <div className="mt-6 flex items-start gap-3 rounded-md border border-sky-300/14 bg-sky-300/[0.055] p-4">
             <LockKeyhole aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-sky-200" />
             <p className="text-sm leading-6 text-slate-300">
-              A build 0.3.4 possui instalador unsigned para QA e validacao. A
-              distribuicao publica documentada depende de assinatura de codigo,
-              checksum, notas de versao e checklist em maquina limpa.
+              A build 0.3.4 possui instalador unsigned para QA e validação. A
+              distribuição pública documentada depende de assinatura de código,
+              checksum, notas de versão e checklist em máquina limpa.
             </p>
           </div>
           </Card>

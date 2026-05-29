@@ -11,51 +11,51 @@ import {
 
 export const features = [
   {
-    title: "Dashboard de saude do sistema",
+    title: "Dashboard de saúde do sistema",
     description:
-      "Painel com saude geral, CPU, RAM, armazenamento, inicializacao, limpeza pendente, rede, DNS e historico recente.",
+      "Painel com saúde geral, CPU, RAM, armazenamento, inicialização, limpeza pendente, rede, DNS e histórico recente.",
     icon: Gauge,
   },
   {
     title: "Limpeza segura e opt-in",
     description:
-      "Scanner de TEMP, cache de navegadores, Windows Update e Lixeira com selecao explicita e confirmacao antes de apagar.",
+      "Scanner de TEMP, cache de navegadores, Windows Update e Lixeira com seleção explícita e confirmação antes de apagar.",
     icon: ShieldCheck,
   },
   {
-    title: "Gerenciamento de inicializacao",
+    title: "Gerenciamento de inicialização",
     description:
-      "Lista entradas do usuario e globais, protege itens somente leitura, desativa entradas gerenciaveis e cria backup.",
+      "Lista entradas do usuário e globais, protege itens somente leitura, desativa entradas gerenciáveis e cria backup.",
     icon: Activity,
   },
   {
-    title: "Otimizacoes reversiveis",
+    title: "Otimizações reversíveis",
     description:
-      "RAM, volumes, planos de energia, efeitos visuais, privacidade e telemetria com historico e restauracao.",
+      "RAM, volumes, planos de energia, efeitos visuais, privacidade e telemetria com histórico e restauração.",
     icon: Cpu,
   },
   {
-    title: "Rede, DNS e diagnosticos",
+    title: "Rede, DNS e diagnósticos",
     description:
-      "Status de adaptadores, perfis DNS com backup, flush DNS, renovacao IPv4, ping, traceroute, speed test e banda ao vivo.",
+      "Status de adaptadores, perfis DNS com backup, flush DNS, renovação IPv4, ping, traceroute, speed test e banda ao vivo.",
     icon: Network,
   },
   {
-    title: "Restauracao central",
+    title: "Restauração central",
     description:
-      "Filtros para backups de inicializacao, DNS, otimizacoes, planos de energia e registros de ponto de restauracao.",
+      "Filtros para backups de inicialização, DNS, otimizações, planos de energia e registros de ponto de restauração.",
     icon: RotateCcw,
   },
   {
-    title: "Logs e diagnostico em ZIP",
+    title: "Logs e diagnóstico em ZIP",
     description:
-      "Registra acoes em logs, exporta relatorios e pacote completo de diagnostico para suporte e validacao.",
+      "Registra ações em logs, exporta relatórios e pacote completo de diagnóstico para suporte e validação.",
     icon: FileClock,
   },
   {
-    title: "Configuracoes e changelog",
+    title: "Configurações e changelog",
     description:
-      "Permite ajustar confirmacoes, pasta de backups automaticos, diagnostico detalhado, assistente e versao instalada.",
+      "Permite ajustar confirmações, pasta de backups automáticos, diagnóstico detalhado, assistente e versão instalada.",
     icon: Settings,
   },
 ];

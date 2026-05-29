@@ -23,8 +23,8 @@ export function ProductPreview() {
             A dashboard real do Trixon Optimizer 0.3.4.
           </h2>
           <p className="mt-4 text-slate-300">
-            A interface atual organiza saude do sistema, desempenho, armazenamento,
-            inicializacao, limpeza pendente, rede, DNS, historico de acoes e atalhos
+            A interface atual organiza saúde do sistema, desempenho, armazenamento,
+            inicialização, limpeza pendente, rede, DNS, histórico de ações e atalhos
             protegidos.
           </p>
         </motion.div>

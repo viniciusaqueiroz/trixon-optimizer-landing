@@ -18,14 +18,14 @@ export function Hero() {
           viewport={{ ...revealViewport, amount: 0.42 }}
           whileInView="visible"
         >
-          <Badge>Versao atual 0.3.4 | Electron + React + PowerShell</Badge>
+          <Badge>Versão atual 0.3.4 | Electron + React + PowerShell</Badge>
           <h1 className="mt-6 text-4xl font-semibold leading-tight text-white md:text-6xl">
-            Trixon Optimizer: controle, limpeza e diagnostico inteligente para Windows
+            Trixon Optimizer: controle, limpeza e diagnóstico inteligente para Windows
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
-            Aplicativo desktop para Windows que centraliza dashboard de saude,
-            limpeza segura, inicializacao, otimizacoes reversiveis, rede, DNS,
-            backups, logs e diagnostico exportavel.
+            Aplicativo desktop para Windows que centraliza dashboard de saúde,
+            limpeza segura, inicialização, otimizações reversíveis, rede, DNS,
+            backups, logs e diagnóstico exportável.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button href="https://github.com/viniciusaqueiroz/trixon-optimizer">
@@ -58,9 +58,9 @@ export function Hero() {
             </div>
             <div className="grid gap-3 text-sm">
               {[
-                ["8 paginas", "Dashboard, Limpeza, Rede e mais"],
-                ["Backups", "Inicializacao, DNS, energia e otimizacoes"],
-                ["QA 0.3.4", "Instalador unsigned para validacao"],
+                ["8 páginas", "Dashboard, Limpeza, Rede e mais"],
+                ["Backups", "Inicialização, DNS, energia e otimizações"],
+                ["QA 0.3.4", "Instalador unsigned para validação"],
               ].map(([value, label]) => (
                 <div
                   className="rounded-md border border-white/10 bg-white/[0.04] p-4"

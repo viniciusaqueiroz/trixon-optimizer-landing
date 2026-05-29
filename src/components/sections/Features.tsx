@@ -20,10 +20,10 @@ export function Features() {
         >
           <Badge>Recursos principais</Badge>
           <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
-            Ferramentas uteis, explicitas e pensadas para rotina real.
+            Ferramentas úteis, explícitas e pensadas para rotina real.
           </h2>
           <p className="mt-4 leading-7 text-slate-300">
-            Cada recurso foi desenhado para ajudar o usuario a entender o estado
+            Cada recurso foi desenhado para ajudar o usuário a entender o estado
             do Windows antes de executar ajustes.
           </p>
         </motion.div>

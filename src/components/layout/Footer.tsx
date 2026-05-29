@@ -10,8 +10,8 @@ export function Footer() {
           <span>Trixon Optimizer</span>
         </div>
         <p>
-          Versao 0.3.4 em validacao. Distribuicao publica condicionada a QA,
-          assinatura de codigo e release notes.
+          Versão 0.3.4 em validação. Distribuição pública condicionada a QA,
+          assinatura de código e release notes.
         </p>
       </div>
     </footer>

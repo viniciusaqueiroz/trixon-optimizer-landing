@@ -18,19 +18,19 @@ export function CTA() {
         >
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-200">
-              Repositorio publico
+              Repositório público
             </p>
             <h2 className="mt-4 text-3xl font-semibold text-white md:text-5xl">
               Veja o projeto, o roadmap e a build 0.3.4.
             </h2>
             <p className="mt-5 max-w-2xl leading-7 text-slate-300">
-              O GitHub concentra README, paginas do sistema, estrategia de
-              distribuicao Windows, checklist de QA, changelog e download atual
-              para validacao interna.
+              O GitHub concentra README, páginas do sistema, estratégia de
+              distribuição Windows, checklist de QA, changelog e download atual
+              para validação interna.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="https://github.com/viniciusaqueiroz/trixon-optimizer">
-                Abrir repositorio
+                Abrir repositório
               </Button>
               <Button
                 href="https://github.com/viniciusaqueiroz/trixon-optimizer/blob/main/downloads/README.md"

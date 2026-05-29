@@ -4,7 +4,7 @@ import { assetPath } from "@/lib/assets";
 
 const navItems = [
   { label: "Recursos", href: "#recursos" },
-  { label: "Seguranca", href: "#seguranca" },
+  { label: "Segurança", href: "#seguranca" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -20,7 +20,7 @@ export function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Navegacao principal">
+        <nav className="hidden items-center gap-7 md:flex" aria-label="Navegação principal">
           {navItems.map((item) => (
             <a
               className="text-sm text-slate-300 transition hover:text-white"

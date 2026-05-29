@@ -19,11 +19,11 @@ export function Roadmap() {
         >
           <Badge>Roadmap</Badge>
           <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
-            Evolucao planejada sem perder a base de confianca.
+            Evolução planejada sem perder a base de confiança.
           </h2>
           <p className="mt-4 leading-7 text-slate-300">
-            O produto avanca em ciclos: primeiro seguranca e estabilidade, depois
-            automacoes, perfis e recursos para ambientes mais exigentes.
+            O produto avança em ciclos: primeiro segurança e estabilidade, depois
+            automações, perfis e recursos para ambientes mais exigentes.
           </p>
         </motion.div>
 
